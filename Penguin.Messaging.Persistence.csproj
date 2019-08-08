@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageProjectUrl>http://www.penguinms.com/Nuget</PackageProjectUrl>
+	<PackageIconUrl>http://www.penguinms.com/client/images/pg.png</PackageIconUrl>
+    <Version>2.0.6</Version>
+	<Description>Message containers for Penguin.Messaging.Core, to represent pre/post data persistence actions (Ex, Saving/Saved, Deleting/Deleted) for use in messaging for data persistence</Description>
+  </PropertyGroup>
+  
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningsAsErrors>NU1605, CS1591</WarningsAsErrors>
+    <DocumentationFile>C:\SVN\Framework\Nuget\Penguin.Messaging.Persistence\Penguin.Messaging.Persistence.xml</DocumentationFile>
+  </PropertyGroup>
+  
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	<DebugType>full</DebugType>
+      <DocumentationFile>C:\SVN\Framework\Nuget\Penguin.Messaging.Persistence\Penguin.Messaging.Persistence.xml</DocumentationFile>
+    </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Penguin.Messaging.Abstractions" Version="2.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\License.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

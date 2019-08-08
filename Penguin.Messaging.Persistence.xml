@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Penguin.Messaging.Persistence</name>
+    </assembly>
+    <members>
+        <member name="T:Penguin.Messaging.Persistence.Messages.Created`1">
+            <summary>
+            A post-save create message. Inherits from saved
+            </summary>
+            <typeparam name="T">The type of the object being created</typeparam>
+        </member>
+        <member name="M:Penguin.Messaging.Persistence.Messages.Created`1.#ctor(`0)">
+            <summary>
+            Creates a new instance of the message with the object being referenced attached
+            </summary>
+            <param name="target">The object being referenced</param>
+        </member>
+        <member name="T:Penguin.Messaging.Persistence.Messages.Creating`1">
+            <summary>
+            A pre-save create message. Inherits from Saving
+            </summary>
+            <typeparam name="T">The type of the object being created</typeparam>
+        </member>
+        <member name="M:Penguin.Messaging.Persistence.Messages.Creating`1.#ctor(`0)">
+            <summary>
+            Creates a new instance of the message with the object being referenced attached
+            </summary>
+            <param name="target">The object being referenced</param>
+        </member>
+        <member name="T:Penguin.Messaging.Persistence.Messages.Deleted`1">
+            <summary>
+            A post-save delete message. Inherits from saved
+            </summary>
+            <typeparam name="T">The type of the object being deleted</typeparam>
+        </member>
+        <member name="M:Penguin.Messaging.Persistence.Messages.Deleted`1.#ctor(`0)">
+            <summary>
+            Creates a new instance of the message with the object being referenced attached
+            </summary>
+            <param name="target">The object being referenced</param>
+        </member>
+        <member name="T:Penguin.Messaging.Persistence.Messages.Deleting`1">
+            <summary>
+            A pre-save delete message. Inherits from Saving
+            </summary>
+            <typeparam name="T">The type of the object being deleted</typeparam>
+        </member>
+        <member name="M:Penguin.Messaging.Persistence.Messages.Deleting`1.#ctor(`0)">
+            <summary>
+            Creates a new instance of the message with the object being referenced attached
+            </summary>
+            <param name="target">The object being referenced</param>
+        </member>
+        <member name="T:Penguin.Messaging.Persistence.Messages.Saved`1">
+            <summary>
+            A post-save message.
+            </summary>
+            <typeparam name="T">The type of the object being saved</typeparam>
+        </member>
+        <member name="M:Penguin.Messaging.Persistence.Messages.Saved`1.#ctor(`0)">
+            <summary>
+            Creates a new instance of the message with the object being referenced attached
+            </summary>
+            <param name="target">The object being referenced</param>
+        </member>
+        <member name="T:Penguin.Messaging.Persistence.Messages.Saving`1">
+            <summary>
+            A pre-save message.
+            </summary>
+            <typeparam name="T">The type of the object being saved</typeparam>
+        </member>
+        <member name="M:Penguin.Messaging.Persistence.Messages.Saving`1.#ctor(`0)">
+            <summary>
+            Creates a new instance of the message with the object being referenced attached
+            </summary>
+            <param name="target">The object being referenced</param>
+        </member>
+        <member name="T:Penguin.Messaging.Persistence.Messages.Updated`1">
+            <summary>
+            A post-save update message. Inherits from saved
+            </summary>
+            <typeparam name="T">The type of the object being udpated</typeparam>
+        </member>
+        <member name="M:Penguin.Messaging.Persistence.Messages.Updated`1.#ctor(`0)">
+            <summary>
+            Creates a new instance of the message with the object being referenced attached
+            </summary>
+            <param name="target">The object being referenced</param>
+        </member>
+        <member name="T:Penguin.Messaging.Persistence.Messages.Updating`1">
+            <summary>
+            A pre-save update message. Inherits from Saving
+            </summary>
+            <typeparam name="T">The type of the object being updated</typeparam>
+        </member>
+        <member name="M:Penguin.Messaging.Persistence.Messages.Updating`1.#ctor(`0)">
+            <summary>
+            Creates a new instance of the message with the object being referenced attached
+            </summary>
+            <param name="target">The object being referenced</param>
+        </member>
+    </members>
+</doc>
