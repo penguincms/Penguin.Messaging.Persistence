@@ -98,6 +98,21 @@
             </summary>
             <param name="target">The object being referenced</param>
         </member>
+        <member name="T:Penguin.Messaging.Persistence.Messages.IUpdated">
+            <summary>
+            Interface used to access the updated values for the object referenced in the message
+            </summary>
+        </member>
+        <member name="P:Penguin.Messaging.Persistence.Messages.IUpdated.NewValues">
+            <summary>
+            A Dictionary containing the changed property name / values for the new version of the entity
+            </summary>
+        </member>
+        <member name="P:Penguin.Messaging.Persistence.Messages.IUpdated.OldValues">
+            <summary>
+            A Dictionary containing the changed property / values as they were on the old version of the entity
+            </summary>
+        </member>
         <member name="T:Penguin.Messaging.Persistence.Messages.Updating`1">
             <summary>
             A pre-save update message. Inherits from Saving
