@@ -115,6 +115,13 @@
             <param name="newValues">The changed property new values</param>
             <param name="oldValues">The changed property old values</param>
         </member>
+        <member name="M:Penguin.Messaging.Persistence.Messages.Updated`1.#ctor(`0,Penguin.Messaging.Persistence.Interfaces.IUpdated)">
+            <summary>
+            Creates a new instance of the message with the object being referenced attached
+            </summary>
+            <param name="target">The object being referenced</param>
+            <param name="updateData">An interface containing the values changed as part of this update</param>
+        </member>
         <member name="T:Penguin.Messaging.Persistence.Messages.Updating`1">
             <summary>
             A pre-save update message. Inherits from Saving

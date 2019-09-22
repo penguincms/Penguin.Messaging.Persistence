@@ -47,6 +47,13 @@ namespace Penguin.Messaging.Persistence.Messages
 
         }
 
+        /// <summary>
+        /// Creates a new instance of the message with the object being referenced attached
+        /// </summary>
+        /// <param name="target">The object being referenced</param>
+        /// <param name="updateData">An interface containing the values changed as part of this update</param>
+        public Updated(T target, IUpdated updateData) : this(target, updateData?.NewValues, updateData?.OldValues) { }
+
         #endregion Constructors
     }
 }
