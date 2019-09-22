@@ -196,11 +196,20 @@
             A Dictionary containing the changed property / values as they were on the old version of the entity
             </summary>
         </member>
-        <member name="M:Penguin.Messaging.Persistence.Messages.Updating`1.#ctor(`0)">
+        <member name="M:Penguin.Messaging.Persistence.Messages.Updating`1.#ctor(`0,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
             <summary>
             Creates a new instance of the message with the object being referenced attached
             </summary>
             <param name="target">The object being referenced</param>
+            <param name="newValues">The changed property new values</param>
+            <param name="oldValues">The changed property old values</param>
+        </member>
+        <member name="M:Penguin.Messaging.Persistence.Messages.Updating`1.#ctor(`0,Penguin.Messaging.Persistence.Interfaces.IUpdated)">
+            <summary>
+            Creates a new instance of the message with the object being referenced attached
+            </summary>
+            <param name="target">The object being referenced</param>
+            <param name="updateData">An interface containing the values changed as part of this update</param>
         </member>
     </members>
 </doc>

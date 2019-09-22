@@ -24,9 +24,34 @@ namespace Penguin.Messaging.Persistence.Messages
         /// Creates a new instance of the message with the object being referenced attached
         /// </summary>
         /// <param name="target">The object being referenced</param>
-        public Updating(T target) : base(target)
+        /// <param name="newValues">The changed property new values</param>
+        /// <param name="oldValues">The changed property old values</param>
+        public Updating(T target, Dictionary<string, object> newValues = null, Dictionary<string, object> oldValues = null) : base(target)
         {
+            if (newValues != null)
+            {
+                foreach (KeyValuePair<string, object> newValue in newValues)
+                {
+                    NewValues.Add(newValue.Key, newValue.Value);
+                }
+            }
+
+            if (oldValues != null)
+            {
+                foreach (KeyValuePair<string, object> oldValue in oldValues)
+                {
+                    OldValues.Add(oldValue.Key, oldValue.Value);
+                }
+            }
+
         }
+
+        /// <summary>
+        /// Creates a new instance of the message with the object being referenced attached
+        /// </summary>
+        /// <param name="target">The object being referenced</param>
+        /// <param name="updateData">An interface containing the values changed as part of this update</param>
+        public Updating(T target, IUpdated updateData) : this(target, updateData?.NewValues, updateData?.OldValues) { }
 
         #endregion Constructors
     }
