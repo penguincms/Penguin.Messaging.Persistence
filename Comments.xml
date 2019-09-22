@@ -4,6 +4,21 @@
         <name>Penguin.Messaging.Persistence</name>
     </assembly>
     <members>
+        <member name="T:Penguin.Messaging.Persistence.Interfaces.IUpdated">
+            <summary>
+            Interface used to access the updated values for the object referenced in the message
+            </summary>
+        </member>
+        <member name="P:Penguin.Messaging.Persistence.Interfaces.IUpdated.NewValues">
+            <summary>
+            A Dictionary containing the changed property name / values for the new version of the entity
+            </summary>
+        </member>
+        <member name="P:Penguin.Messaging.Persistence.Interfaces.IUpdated.OldValues">
+            <summary>
+            A Dictionary containing the changed property / values as they were on the old version of the entity
+            </summary>
+        </member>
         <member name="T:Penguin.Messaging.Persistence.Messages.Created`1">
             <summary>
             A post-save create message. Inherits from saved
@@ -92,26 +107,13 @@
             A Dictionary containing the changed property / values as they were on the old version of the entity
             </summary>
         </member>
-        <member name="M:Penguin.Messaging.Persistence.Messages.Updated`1.#ctor(`0)">
+        <member name="M:Penguin.Messaging.Persistence.Messages.Updated`1.#ctor(`0,System.Collections.Generic.Dictionary{System.String,System.Object},System.Collections.Generic.Dictionary{System.String,System.Object})">
             <summary>
             Creates a new instance of the message with the object being referenced attached
             </summary>
             <param name="target">The object being referenced</param>
-        </member>
-        <member name="T:Penguin.Messaging.Persistence.Messages.IUpdated">
-            <summary>
-            Interface used to access the updated values for the object referenced in the message
-            </summary>
-        </member>
-        <member name="P:Penguin.Messaging.Persistence.Messages.IUpdated.NewValues">
-            <summary>
-            A Dictionary containing the changed property name / values for the new version of the entity
-            </summary>
-        </member>
-        <member name="P:Penguin.Messaging.Persistence.Messages.IUpdated.OldValues">
-            <summary>
-            A Dictionary containing the changed property / values as they were on the old version of the entity
-            </summary>
+            <param name="newValues">The changed property new values</param>
+            <param name="oldValues">The changed property old values</param>
         </member>
         <member name="T:Penguin.Messaging.Persistence.Messages.Updating`1">
             <summary>

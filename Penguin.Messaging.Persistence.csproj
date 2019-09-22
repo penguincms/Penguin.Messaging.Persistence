@@ -2,7 +2,7 @@
   <Import Project="Penguin.Projects.Shared\Penguin.Projects.Shared.csproj" />
   <PropertyGroup>
     <PackageProjectUrl>https://github.com/penguincms/Penguin.Messaging.Persistence</PackageProjectUrl>
-    <Version>2.1.1</Version>
+    <Version>2.1.2</Version>
 	<Description>Message containers for Penguin.Messaging.Core, to represent pre/post data persistence actions (Ex, Saving/Saved, Deleting/Deleted) for use in messaging for data persistence</Description>
   </PropertyGroup>
   <ItemGroup>
