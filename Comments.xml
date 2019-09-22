@@ -115,6 +115,16 @@
             </summary>
             <param name="target">The object being referenced</param>
         </member>
+        <member name="T:Penguin.Messaging.Persistence.Messages.PostCommit">
+            <summary>
+            Fires after a persistence commit has completed
+            </summary>
+        </member>
+        <member name="T:Penguin.Messaging.Persistence.Messages.PreCommit">
+            <summary>
+            Fires on the beginning of a persistence commit
+            </summary>
+        </member>
         <member name="T:Penguin.Messaging.Persistence.Messages.Saved`1">
             <summary>
             A post-save message.
