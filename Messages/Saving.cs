@@ -1,4 +1,5 @@
 ﻿using Penguin.Messaging.Abstractions.Messages;
+using Penguin.Messaging.Persistence.Interfaces;
 
 namespace Penguin.Messaging.Persistence.Messages
 {
@@ -6,7 +7,7 @@ namespace Penguin.Messaging.Persistence.Messages
     /// A pre-save message.
     /// </summary>
     /// <typeparam name="T">The type of the object being saved</typeparam>
-    public class Saving<T> : Message<T>
+    public class Saving<T> : Message<T>, ISaving<T>
     {
         #region Constructors
 

@@ -7,7 +7,7 @@ namespace Penguin.Messaging.Persistence.Messages
     /// A post-save update message. Inherits from saved
     /// </summary>
     /// <typeparam name="T">The type of the object being udpated</typeparam>
-    public class Updated<T> : Saved<T>, IUpdated
+    public class Updated<T> : Saved<T>, IUpdated<T>
     {
         #region Constructors
 

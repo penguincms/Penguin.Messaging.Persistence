@@ -1,10 +1,12 @@
-﻿namespace Penguin.Messaging.Persistence.Messages
+﻿using Penguin.Messaging.Persistence.Interfaces;
+
+namespace Penguin.Messaging.Persistence.Messages
 {
     /// <summary>
     /// A post-save create message. Inherits from saved
     /// </summary>
     /// <typeparam name="T">The type of the object being created</typeparam>
-    public class Created<T> : Saved<T>
+    public class Created<T> : Saved<T>, ICreated<T>
     {
         #region Constructors
 

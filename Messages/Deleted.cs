@@ -1,10 +1,12 @@
-﻿namespace Penguin.Messaging.Persistence.Messages
+﻿using Penguin.Messaging.Persistence.Interfaces;
+
+namespace Penguin.Messaging.Persistence.Messages
 {
     /// <summary>
     /// A post-save delete message. Inherits from saved
     /// </summary>
     /// <typeparam name="T">The type of the object being deleted</typeparam>
-    public class Deleted<T> : Saved<T>
+    public class Deleted<T> : Saved<T>, IDeleted<T>
     {
         #region Constructors
 

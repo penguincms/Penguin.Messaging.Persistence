@@ -186,6 +186,16 @@
             </summary>
             <typeparam name="T">The type of the object being updated</typeparam>
         </member>
+        <member name="P:Penguin.Messaging.Persistence.Messages.Updating`1.NewValues">
+            <summary>
+            A Dictionary containing the changed property name / values for the new version of the entity
+            </summary>
+        </member>
+        <member name="P:Penguin.Messaging.Persistence.Messages.Updating`1.OldValues">
+            <summary>
+            A Dictionary containing the changed property / values as they were on the old version of the entity
+            </summary>
+        </member>
         <member name="M:Penguin.Messaging.Persistence.Messages.Updating`1.#ctor(`0)">
             <summary>
             Creates a new instance of the message with the object being referenced attached
