@@ -1,9 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="Penguin.Projects.Shared\Penguin.Projects.Shared.csproj" />
   <PropertyGroup>
     <PackageProjectUrl>https://github.com/penguincms/Penguin.Messaging.Persistence</PackageProjectUrl>
     <Version>2.2.4</Version>
-	<Description>Message containers for Penguin.Messaging.Core, to represent pre/post data persistence actions (Ex, Saving/Saved, Deleting/Deleted) for use in messaging for data persistence</Description>
+    <Description>Message containers for Penguin.Messaging.Core, to represent pre/post data persistence actions (Ex, Saving/Saved, Deleting/Deleted) for use in messaging for data persistence</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Penguin.Messaging.Abstractions" Version="2.1.1" />
