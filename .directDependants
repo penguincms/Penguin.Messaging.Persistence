@@ -1,0 +1,13 @@
+Penguin.Cms.Auditing.Repositories
+Penguin.Cms.Communication.Repositories
+Penguin.Cms.Email.Repositories
+Penguin.Cms.Email.Templating.Repositories
+Penguin.Cms.Files.Repositories
+Penguin.Cms.Images.Repositories
+Penguin.Cms.InternalMessaging.Repositories
+Penguin.Cms.Navigation.Repositories
+Penguin.Cms.Pages.Repositories
+Penguin.Cms.Web.Files
+Penguin.Cms.Web.Security
+Penguin.Persistence.Repositories
+Penguin.Persistence.Repositories.EntityFramework
