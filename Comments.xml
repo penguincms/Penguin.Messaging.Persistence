@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <doc>
     <assembly>
-        <name>Penguin.Messaging.Persistence.Local</name>
+        <name>Penguin.Messaging.Persistence</name>
     </assembly>
     <members>
         <member name="T:Penguin.Messaging.Persistence.Interfaces.ICreated`1">

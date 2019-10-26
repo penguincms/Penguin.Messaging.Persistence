@@ -7,6 +7,6 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Penguin.Messaging.Abstractions" Version="2.1.1" />
+    <PackageReference Include="Penguin.Messaging.Abstractions" Version="2.1.2-63707653241" />
   </ItemGroup>
 </Project>
