@@ -5,6 +5,8 @@
     <Version>2.2.4</Version>
     <Description>Message containers for Penguin.Messaging.Core, to represent pre/post data persistence actions (Ex, Saving/Saved, Deleting/Deleted) for use in messaging for data persistence</Description>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Penguin.Messaging.Persistence</AssemblyName>
+    <RootNamespace>Penguin.Messaging.Persistence</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Penguin.Messaging.Abstractions\Penguin.Messaging.Abstractions.Local.csproj" />
