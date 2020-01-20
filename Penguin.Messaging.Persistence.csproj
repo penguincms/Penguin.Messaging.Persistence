@@ -9,6 +9,6 @@
     <RootNamespace>Penguin.Messaging.Persistence</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Penguin.Messaging.Abstractions" Version="2.1.3-T9MJL4F" />
+    <PackageReference Include="Penguin.Messaging.Abstractions" Version="2.1.3-T9QC72V" />
   </ItemGroup>
 </Project>
