@@ -6,6 +6,5 @@
     /// <typeparam name="T">The type of the object being updated</typeparam>
     public interface IUpdating<out T> : ISaving<T>, IUpdated
     {
-
     }
 }

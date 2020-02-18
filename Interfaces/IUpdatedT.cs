@@ -1,7 +1,4 @@
-﻿using Penguin.Messaging.Persistence.Interfaces;
-using System.Collections.Generic;
-
-namespace Penguin.Messaging.Persistence.Interfaces
+﻿namespace Penguin.Messaging.Persistence.Interfaces
 {
     /// <summary>
     /// A post-save update message. Inherits from saved
@@ -9,6 +6,5 @@ namespace Penguin.Messaging.Persistence.Interfaces
     /// <typeparam name="T">The type of the object being udpated</typeparam>
     public interface IUpdated<out T> : ISaved<T>, IUpdated
     {
-
     }
 }

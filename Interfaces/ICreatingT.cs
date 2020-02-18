@@ -6,6 +6,5 @@
     /// <typeparam name="T">The type of the object being created</typeparam>
     public interface ICreating<out T> : ISaving<T>
     {
-
     }
 }

@@ -10,6 +10,7 @@ namespace Penguin.Messaging.Persistence.Messages
     public class Updating<T> : Saving<T>, IUpdating<T>
     {
         #region Constructors
+
         /// <summary>
         /// A Dictionary containing the changed property name / values for the new version of the entity
         /// </summary>
@@ -43,7 +44,6 @@ namespace Penguin.Messaging.Persistence.Messages
                     OldValues.Add(oldValue.Key, oldValue.Value);
                 }
             }
-
         }
 
         /// <summary>

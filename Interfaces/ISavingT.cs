@@ -1,5 +1,4 @@
 ﻿using Penguin.Messaging.Abstractions.Interfaces;
-using Penguin.Messaging.Abstractions.Messages;
 
 namespace Penguin.Messaging.Persistence.Interfaces
 {
@@ -9,6 +8,5 @@ namespace Penguin.Messaging.Persistence.Interfaces
     /// <typeparam name="T">The type of the object being saved</typeparam>
     public interface ISaving<out T> : IMessage<T>
     {
-
     }
 }

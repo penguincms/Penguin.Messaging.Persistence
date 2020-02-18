@@ -6,6 +6,5 @@
     /// <typeparam name="T">The type of the object being deleted</typeparam>
     public interface IDeleted<out T> : ISaved<T>
     {
-
     }
 }

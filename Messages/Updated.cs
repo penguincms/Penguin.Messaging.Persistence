@@ -44,7 +44,6 @@ namespace Penguin.Messaging.Persistence.Messages
                     OldValues.Add(oldValue.Key, oldValue.Value);
                 }
             }
-
         }
 
         /// <summary>
