@@ -33,7 +33,7 @@ namespace Penguin.Messaging.Persistence.Messages
             {
                 foreach (KeyValuePair<string, object> newValue in newValues)
                 {
-                    NewValues.Add(newValue.Key, newValue.Value);
+                    this.NewValues.Add(newValue.Key, newValue.Value);
                 }
             }
 
@@ -41,7 +41,7 @@ namespace Penguin.Messaging.Persistence.Messages
             {
                 foreach (KeyValuePair<string, object> oldValue in oldValues)
                 {
-                    OldValues.Add(oldValue.Key, oldValue.Value);
+                    this.OldValues.Add(oldValue.Key, oldValue.Value);
                 }
             }
         }
