@@ -10,6 +10,6 @@
     <DocumentationFile>Penguin.Messaging.Persistence.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Penguin.Messaging.Abstractions" Version="2.1.3-T9X8YHS" />
+    <PackageReference Include="Penguin.Messaging.Abstractions" Version="2.1.3-T9X9YTC" />
   </ItemGroup>
 </Project>
