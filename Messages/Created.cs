@@ -1,4 +1,6 @@
-﻿using Penguin.Messaging.Persistence.Interfaces;
+﻿using Penguin.Messaging.Abstractions.Interfaces;
+using Penguin.Messaging.Persistence.Interfaces;
+using System;
 
 namespace Penguin.Messaging.Persistence.Messages
 {
