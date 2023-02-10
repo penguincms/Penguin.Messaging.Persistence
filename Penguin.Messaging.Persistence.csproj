@@ -4,7 +4,7 @@
     <PackageProjectUrl>https://github.com/PenguinCms/Penguin.Messaging.Persistence</PackageProjectUrl>
     <Version>5.0.5</Version>
     <Description>Message containers for Penguin.Messaging.Core, to represent pre/post data persistence actions (Ex, Saving/Saved, Deleting/Deleted) for use in messaging for data persistence</Description>
-    <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net7.0</TargetFrameworks>
     <AssemblyName>Penguin.Messaging.Persistence</AssemblyName>
     <RootNamespace>Penguin.Messaging.Persistence</RootNamespace>
     <DocumentationFile>Penguin.Messaging.Persistence.xml</DocumentationFile>
